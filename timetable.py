@@ -3263,4 +3263,3 @@ def whenDoesThisTripGetToThisStopCode(routeName, vehicleJourneycode, stopCode):
 
 if __name__ == "__main__":
     execute(parse_cli_args())
-    os.system("shutdown /s")
