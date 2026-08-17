@@ -2892,8 +2892,10 @@ def processFile(file):
                         route_link.get("Direction"),
                         route_link_ref,
                     ))
-
-                    mapping = (route_link.get("Track") or {}).get("Mapping") or {}
+                    if type(route_link.get("Track")) == dict: track = route_link.get("Track")
+                    elif type(route_link.get("Track")) == list: track = route_link.get("Track")[0]; print(len(route_link.get("Track")), OUT_DIR)
+                    else: track = {}
+                    mapping = (track or {}).get("Mapping") or {}
                     point_sequence = 0
                     for location in ensure_list(mapping.get("Location", [])):
                         coordinates = parse_location_coordinates(location)

@@ -5,6 +5,7 @@
       <excludeFolder url="file://$MODULE_DIR$/.data" />
       <excludeFolder url="file://$MODULE_DIR$/.out" />
       <excludeFolder url="file://$MODULE_DIR$/.venv" />
+      <excludeFolder url="file://$MODULE_DIR$/.datatemp" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.14 (TransXchangeParser)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
